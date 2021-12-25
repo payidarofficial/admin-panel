@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+// Genel
+body{
+    background-color: #222630;
+    margin: 0;
+    user-select: none;
+}
+::selection{
+    background: #454e66;
+}
+
+// Giriş Panel CSS Kodları
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+}
+span{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    color: white;
+    line-height: 1.5px; /* Requied */
+    padding: 8px;
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.giris-box{
+    border-radius: 8px;
+    margin: 0;
+    background-color: #2d3340;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 8px;
+}
+.giris-box hr{
+    background: #4e5b79;
+    height: 1px;
+    opacity: .5;
+    border: none;
+}
+.giris-box p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+.giris-box input{
+    font-family: 'Karla', sans-serif;
+    color: white;
+    padding: 3px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #4e5b79;
+}
+.giris-box input[type="submit"]{
+    font-family: 'Karla', sans-serif;
+    color: white;
+    padding: 3px;
+    border: none;
+    outline: none;
+    background: none;
+    transition: 250ms all;
+    border-radius: 17px;
+    cursor: pointer;
+}
+.giris-box input[type="submit"]:hover{
+    background-color: #4e5b79;
+}
+
+// Giriş Başarılı
+.giris-basarili span{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    color: red;
+    line-height: 1.5px; /* Requied */
+    padding: 8px;
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+}
+.flex-box{
+    display: flex;
+    justify-content: center;
+}
+.flex-box > a{
+    font-family: 'Karla', sans-serif;
+    color: white;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: none;
+    transition: 250ms all;
+    border-radius: 5px;
+    position: relative;
+    top: 35px;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.flex-box > a:hover{
+    background-color: #4e5b79;
+    text-decoration: none;
+}
